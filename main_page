@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Main Page </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+            body{
+                font-family: 'Oswald', sans-serif;
+            }
+            h1{
+                text-align: center;
+            }
+            .main {
+                width: 110px;
+                padding-left: 20px;
+                border-color: coral;
+                border-style: dashed;
+                margin-left: 50px;
+                
+            }
+            h3{
+                margin-left: 50px;
+            }
+            ul{
+                list-style: none;
+                margin-left: 20px;
+            }
+            img{
+                float: right;
+                margin: 0 10em 0 0;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        <h1>Samantha "Sami" Mays</h1>
+        <h2 class="main">Main Page</h2>
+        <h3>Navigate using the selections below:</h3>
+        <img src="https://picsum.photos/200/300">
+        <ul>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li>Technical Skills</li>
+            <li>Volunteer Experience</li>
+        </ul>
+    </body>
+</html>
