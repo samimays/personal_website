@@ -1,74 +1,109 @@
 <html>
-    <head>
-        <title>Education</title>
-        <link rel="stylesheet" type="text/css" href="dropdown.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-            body{
-                font-family: 'Oswald', sans-serif;
-                padding: 0 3em 0 3em;
-                background-image: linear-gradient(105deg, darkblue 39%, #cd7f30 96%);
-                color: #cd7f30;
-            }
-            ul{
-                list-style:square;
-            }
-            #name{
-                font-size: 40px;
-            }
-            #cert{
-                color: #cd7f30;
-                text-decoration: none;
-            }
-            /* Add a black background color to the top navigation */
-            .topnav {
-              float: right;
-              background-color: darkblue;
-              overflow: hidden;
-            }
+<head>
+    <title>Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        .certLabel{
+            background-color: maroon;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: 50%;
+        }
+         *{
+            box-sizing: border-box;
+        }
+        .column1{
+            float: left;
+            width: 49%;
+            padding: 5px;
+            background-color: maroon;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+         .column2 {
+            float: right;
+            width: 49%;
+            padding: 5px;
+            background-color: maroon;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        #cert{
+            color: goldenrod;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
 
-            /* Style the links inside the navigation bar */
-            .topnav a {
-              float: left;
-              color: #cd7f30;
-              text-align: center;
-              padding: 4px 8px;
-              text-decoration: none;
-              font-size: 20px;
-            }
+     <div class="navbar">
+<a href="Main.html">About Me</a>
+<a class="active" href="#">Education</a>
+<a href="work_experience.html">Work Experience</a>
+<a href="technical_skills.html">Technical Skills</a>
+<a href="Samantha_Mays_Resume.pdf" download target="_blank">Resume</a>
+<div class="dropdown">
+<button class="dropbtn" onclick="myFunction()">Dropdown
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content" id="myDropdown">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+</div>
+</div> 
+</div>
+    <br>
+    <b class="title">Education</b><br><br>
+    <div class="column1">
+    <div>
+    <big><u>Primary Education:</u></big>
+    <big>University of Florida, Hough Graduate School of Business - Gainesville, FL</big><br> 
+        Master of Science in Information Systems and Operations Management (ISOM)<br>
+        Track: Information Technology <br>
+        GPA: 3.78/4.00, <b>KPMG Merit Scholarship Recipient</b> <br>
+        May 2019</div><br>
 
-            /* Change the color of links on hover */
-            .topnav a:hover {
-              background-color: #cd7f30;
-              color: darkblue;
-            }
-        </style>
-    </head>
-    <body>
-        <b id="name">Education</b>
-        <div class="topnav">
-            <a href="Main.html">About Me</a>
-            <a class="active" href="#">Education</a>
-            <a href="work_experience.html">Work Experience</a>
-            <a href="technical_skills.html">Technical Skills</a>
-            <a href="Samantha_Mays_Resume.pdf" download target="_blank">Resume</a>
-        </div><br><br>
-        <big><u>Primary Education:</u></big>
-        <p><big>University of Florida, Hough Graduate School of Business - Gainesville, FL</big><br> 
-            Master of Science in Information Systems and Operations Management (ISOM)<br>
-            Track: Information Technology <br>
-            GPA: 3.78/4.00, <b>KPMG Merit Scholarship Recipient</b> <br>
-            May 2019</p>
- 
-        <p><big>University of Florida, College of Health and Human Performance - Gainesville, FL</big><br>		   	    	         
-        Bachelor of Science – Applied Physiology and Kinesiology, Exercise Physiology<br>                 		 
-        GPA: 3.72/4.00, <b> Summa Cum Laude </b> <br>
-        May 2016</p> <br>
-        
-        <big><u>Certificates:</u></big>
-        <p>
-            <big><a href="R_Class_Certification.pdf" download target="_blank" id="cert">Machine Learning and Bootcamp with R </a></big><br>
-        December 2019</p>
-       
-    </body>
+    <div>
+    <big>University of Florida, College of Health and Human Performance - Gainesville, FL</big><br>		   	    	       
+    Bachelor of Science – Applied Physiology and Kinesiology, Exercise Physiology<br>                 		 
+    GPA: 3.72/4.00, <b> Summa Cum Laude </b> <br>
+    May 2016</div><br></div>
+
+    <div class="column2">
+    <big class="certLabel"><u>Certificates:</u></big>
+    <br><br>
+    <div>
+    <a href="R_Class_Certification.pdf" download target="_blank" id="cert">Machine Learning and Bootcamp with R </a><br>
+    December 2019
+    </div><br>
+    <div>
+    <a href="Course_Completion_HTML.pdf" download target="_blank" id="cert">HTML CSS Javascript for Beginners Modern Web Design </a><br>
+    December 2019
+    </div><br>
+
+        </div>
+   <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("myDropdown");
+if (myDropdown.classList.contains('show')) {
+  myDropdown.classList.remove('show');
+}
+}
+}
+</script>
+</body>
+</html>
 </html>
