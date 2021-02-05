@@ -1,82 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Main Page </title>
-        <!---<link rel="stylesheet" type="text/css" href="dropdown.css">-->
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-            body{
-                font-family: 'Oswald', sans-serif;
-                padding:0 3em 0 3em;
-                background-image: linear-gradient(105deg, maroon 39%, goldenrod 96%);
-                color:goldenrod;
-            } 
-            #name{
-                font-size: 40px;
-            }
-            .main {
-                width: 90px;
-                border-color: coral;
-                border-style: dashed;
-            }
-            ul{
-                list-style:square;
-            }
-            img{
-                float: right;
-                width: 40%;
-                margin: 5em 5em 0 0;
-            }
-            p{
-                max-width: 45%;
-                padding-top: 20px;
-                font-size: 20px;
-            }
-            /* Add a black background color to the top navigation */
-            .topnav {
-              float: right;
-              background-color: maroon;
-              overflow: hidden;
-            }
+<head>
+<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="navbar.css">
+<style>
+#name{
+  font-size: 40px;
+  margin: 5px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: maroon;
+}
+p{
+  max-width: 45%;
+  padding: 10px 10px;
+  font-size: 20px;
+  background-color: maroon;
+  border-radius: 10px;             
+}
+img{
+  float: right;
+  width: 40%;
+  margin: 5em 5em 0 0;
+  border-radius: 20px;
+}
+</style>
+</head>
+<body>
 
-            /* Style the links inside the navigation bar */
-            .topnav a {
-              float: left;
-              color: goldenrod;
-              text-align: center;
-              padding: 4px 8px;
-              text-decoration: none;
-              font-size: 20px;
-            }
+<div class="navbar">
+    <a class="active" href="#">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="work_experience.html">Work Experience</a>
+    <a href="technical_skills.html">Technical Skills</a>
+    <a href="Samantha_Mays_Resume.pdf" download target="_blank">Resume</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div> 
+</div>
+    <br>
+<div>    
+<b id="name">Samantha "Sami" Mays</b>
 
-            /* Change the color of links on hover */
-            .topnav a:hover {
-              background-color: goldenrod;
-              color: maroon;
-            }
-        </style>
-    </head>
-    <body>
-        <b id="name">Samantha "Sami" Mays</b>
-        <div class="topnav">
-            <a class="active" href="#">About Me</a>
-            <a href="education.html">Education</a>
-            <a href="work_experience.html">Work Experience</a>
-            <a href="technical_skills.html">Technical Skills</a>
-            <a href="Samantha_Mays_Resume.pdf" download target="_blank">Resume</a>
-            
-        </div>
-      
-        <img src="profile_pic.jpg">
-        <p>My name is Sami, I currently work at LivaNova as an Associate Marketing Analytics Manager. I have experience working in Java, C#, R SQL, HTML, CSS, and Javascript. I love learning and am constantly looking for new ways to improve my skills. My most recent project was creating a forecast in R using non-traditional methods.</p>
-        <p>A fun fact about me: my hobbies include traveling and dancing Salsa!</p>
-        <p>You can contact me by:<br>Email: sami.mays93@gmail.com<br> Phone: +1(386) 490-6828</p>
-        <button class="btn">Change Background Color </button>
-        
-        <!--<script src="popup.js"></script>--> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>             
-            
-        </script>
-        
-    </body>
+<img src="profile_pic.jpg">
+<p>My name is Sami, I currently work at LivaNova as an Associate Marketing Analytics Manager. I have experience working in Java, C#, R SQL, HTML, CSS, and Javascript. I love learning and am constantly looking for new ways to improve my skills. My most recent project was creating a forecast in R using non-traditional methods.</p>
+<p>A fun fact about me: my hobbies include traveling and dancing Salsa!</p>
+<p>You can contact me by:<br>Email: sami.mays93@gmail.com<br> Phone: +1(386) 490-6828</p>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
 </html>
