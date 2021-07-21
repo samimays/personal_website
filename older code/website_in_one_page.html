@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samis Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About me</a>
+        <a href="#skillsAndInterests">Skills and Interests</a>
+        <a href="Samantha_Mays_Resume.pdf" download target="_blank">Download Resume</a>
+    </nav>
+<div class="content">
+    <section id="home">
+        <br>
+        <br>
+        <div class="sectionTitle">Home</div>
+        <img src="profile_pic.jpg">
+        <br><br>
+        <p class="introduction">My name is Sami, I currently work at LivaNova as an Associate Marketing Analytics Manager. I have experience working in Java, C#, R SQL, HTML, CSS, and Javascript. My intellectual curiosity has me constantly looking for new ways to improve my skills and learn new things. My most recent project was creating a forecast in R using non-traditional methods. A fun fact about me: my hobbies include traveling and dancing Salsa!</p><br>
+    </section>
+    <section id="aboutMe">
+        <br>
+        <br>
+        <br>
+        <div class="sectionTitle">About Me</div>
+        <br>
+        <br>
+        <div class="column1">
+            <h2>Work Experience</h2>
+            <b class="jobTitle">LivaNova</b><br>
+            <b class="details">June 2019 - Present </b><br>
+            <i class="details">Associate Marketing and Analytics Manager</i><br>
+            Building forecasts in R from scratch for the company, as well as build dashboards in Qlik to visualize the company progress.<br>
+            <br>
+            <b class="jobTitle">University of Florida, Department of Physical Therapy</b><br>
+            <b class="details">June 2016 – April 2019 </b><br>
+            <i class="details">Data Analyst</i><br>
+            Coordinated with 3 primary investigators on multiple research studies through data collection efforts. Provide support for research team members’ studies. Perform key clerical duties.<br>
+            <br>
+            <b class="jobTitle">Jabil</b><br>
+            <b class="details">May 2018 – August 2018</b><br>
+            <i class="details">Project Management Intern</i><br>
+            Acted as SAP project manager by overseeing a team of 6 employees and communicating with them to complete tasks for a project which entailed simplifying automation processes. Assisted Netweaver team in accomplishing daily checks of system to prevent failure.
+        </div>
+        <div class="column2">
+            <h2>Education</h2>
+            <b class="jobTitle">Master of Science in Information Systems and Operations Management (ISOM)</b><br>
+            <b class="details">University of Florida, Hough Graduate School of Business</b><br>
+            <small class="details">August 2017 - May 2019</small><br>
+            Studied the information technology track, which focused on learning java and C#. Subjects also included SQL and project management.<br>
+            <br>
+            <b class="jobTitle">Bachelor of Science in Applied Physiology and Kinesiology, Exercise Physiology</b><br>
+            <b class="details">University of Florida, College of Health and Human Performance</b><br>
+            <small class="details">Jun 2012 - May 2016</small><br>
+            Studied the Exercise Physciology track, which focused on how the body reacts to movement. Study subjects also included biomechanics. <br>
+        </div>
+    </section> 
+    <br>
+    <br>
+    <div class="info">You can contact me by:<br>Email: sami.mays93@gmail.com<br> Phone: +1(386) 490-6828</div><br>
+    <section id="skillsAndInterests">
+        <br>
+        <br>
+        <div class="sectionTitle">Skills and Interests</div><br>
+        <div class="column1">
+            <h2>Research</h2><br>
+            Smith, Barbara K et al. <q id="publishedPaper"><a href="https://www.pubmed.ncbi.nlm.nih.gov/31831753/" target="_blank">Dynamic respiratory muscle function in late-onset Pompe disease.</a></q><i> Scientific reports</i> vol. 9,1 19006. 12 Dec. 2019, doi:10.1038/s41598-019-54314-8.
+        </div>
+        <div class="column3">
+            <h2>Projects</h2><br>
+            <a href="https://github.com/samimays/miniJava" target="_blank" class="button">Java</a><br>
+            <a href="https://github.com/" target="_blank" class="button">C#</a><br>
+            <a href="https://github.com/" target="_blank" class="button">R</a><br>
+            <a href="https://www.qlik.com/us/" target="_blank" class="button">Qlik</a><br>
+    </section>
+    </div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+
+</script>
+</body>
+</html>
