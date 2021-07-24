@@ -45,9 +45,13 @@ nav a:hover {
   font-size: 1.2rem;
   margin: 5%;
   background-color: rgba(255, 255, 255, 0.603);
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   box-shadow: 5px 10px 12px #888888;
+}
+
+#aboutMe{
+  margin: 5% 0 0 0;
+  padding: 5% 0 0 0;
 }
 
 .work-edu-row{
@@ -55,7 +59,7 @@ nav a:hover {
 }
 
 img{
-  width: 70%;
+  width: 80%;
   margin-top: 5%;
   border-radius: 20px;
   box-shadow: 5px 10px 12px #888888;
@@ -104,16 +108,18 @@ h2{
     color: #C21460;
 }
 .projectLinks {
-  background-color: #F7D4E3;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 3px 2px;
+}
+
+.projectLinks:hover{
+  background-color: #F7D4E3;
   cursor: pointer;
 }
+
 .details{
     color: #FF87AB;
 }
